@@ -1,0 +1,44 @@
+body {
+    background-color: aqua;
+    box-sizing: border-box;
+  }
+@media (min-width: 1200px) and (max-width:1399px) {
+    body {
+    background-color: orange;
+    }
+    body::after{
+        content: "Maxwidth 1399px";
+    }
+}
+@media (min-width: 992px) and (max-width:1199px) {
+    body {
+    background-color: green;
+    }
+    body::after{
+        content: "Maxwidth 1199px";
+    }
+}
+@media (min-width:768px) and (max-width: 991px) {
+    body {
+        background-color: white;
+    }
+    body::after{
+        content: "Maxwidth 992px";
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    body {
+        background-color: blue;
+    }
+    body::after{
+        content: "Maxwidth 768px";
+    }
+}
+@media (max-width: 575px) {
+    body {
+        background-color: pink;
+    }
+    body::after{
+        content: "Maxwidth 576px";
+    }
+}
